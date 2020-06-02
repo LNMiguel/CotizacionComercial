@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76B70325-1C6A-4123-B8E3-CEB68165F4D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CotizacionComercial.My.MyApplication</StartupObject>
+    <RootNamespace>CotizacionComercial</RootNamespace>
+    <AssemblyName>CotizacionComercial</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CotizacionComercial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CotizacionComercial.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.doNetControls">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.doNetControls.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.FunctionsButtons">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.FunctionsButtons.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.FunctionsButtonsdotNet">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.FunctionsButtonsdotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.GridEX20">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.GridEX20.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.Mantenimientos">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.Mantenimientos.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MantenimientosDoNet">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.MantenimientosDoNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSDataGridLib">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.MSDataGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSDataListLib">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.MSDataListLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.SSDataWidgets_A">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\AxInterop.SSDataWidgets_A.dll</HintPath>
+    </Reference>
+    <Reference Include="HelperLibrary">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\HelperLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HPcontroles">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\HPcontroles.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FunctionsButtons">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Interop.FunctionsButtons.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.FunctionsButtonsdotNet">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Interop.FunctionsButtonsdotNet.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.GridEX20">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Interop.GridEX20.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.LibraryVB">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Interop.LibraryVB.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Mantenimientos">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Interop.Mantenimientos.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Janus.Data.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Data.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.ButtonBar.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.CalendarCombo.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.Common.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.ExplorerBar.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.FilterEditor.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.GridEX.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.Ribbon.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.Schedule.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.TimeLine.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v4, Version=4.0.51.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\Janus.Windows.UI.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="ProyectoBase">
+      <HintPath>..\..\..\..\..\..\_SIGEDebug\ProyectoBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clsHELPER.vb" />
+    <Compile Include="clsForm.vb" />
+    <Compile Include="Conexion\SQLConexion.vb" />
+    <Compile Include="Entidades\Busqueda.vb" />
+    <Compile Include="Entidades\PrecioHiladoCotizacion.vb" />
+    <Compile Include="FrmBusqueda.Designer.vb">
+      <DependentUpon>FrmBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusqueda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioHiladoCotizacion.Designer.vb">
+      <DependentUpon>FrmPrecioHiladoCotizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioHiladoCotizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioHiladoCotizacion_Add.Designer.vb">
+      <DependentUpon>FrmPrecioHiladoCotizacion_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioHiladoCotizacion_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioHiladoCotizacion_Detalle.Designer.vb">
+      <DependentUpon>FrmPrecioHiladoCotizacion_Detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioHiladoCotizacion_Detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloGlobal.vb" />
+    <Compile Include="Modulos\mdlGeneral.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmBusqueda.resx">
+      <DependentUpon>FrmBusqueda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioHiladoCotizacion.resx">
+      <DependentUpon>FrmPrecioHiladoCotizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioHiladoCotizacion_Add.resx">
+      <DependentUpon>FrmPrecioHiladoCotizacion_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioHiladoCotizacion_Detalle.resx">
+      <DependentUpon>FrmPrecioHiladoCotizacion_Detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_copy2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_dispatch_order_edit_48x48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
