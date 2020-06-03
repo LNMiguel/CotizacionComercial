@@ -43,7 +43,21 @@
                 GridEX1.DataSource = DT
                 CheckLayoutGridEx(GridEX1)
                 GridEX1.Row = 1
-                'GridEX1.FrozenColumns = 9
+                With GridEX1.RootTable
+                    With .Columns("KGS_COMPRADOS")
+                        .Visible = True
+                        '.CellStyle.BackColor = Color.AliceBlue
+                        .CellStyle.ForeColor = Color.Blue
+                        .FormatString = "#,##0.##"
+                    End With
+                    With .Columns("IMPORTE_ULTIMAS_COMPRAS")
+                        Visible = True
+                        '.CellStyle.BackColor = Color.AliceBlue
+                        .CellStyle.ForeColor = Color.Blue
+                        .FormatString = "#,##0.##"
+                    End With
+
+                End With
             Else
                 'GridEX1.RootTable.Columns.Clear()
                 GridEX1.DataSource = Nothing
@@ -222,15 +236,30 @@
         End If
     End Sub
 
-    'Private Sub ModificarRangoDeFechaToolStripMenuItem_Click(sender As Object, e As EventArgs)
-    '    If GridEX1.RowCount > 0 Then
-    '        Dim frm As New FrmPrecioHiladoCotizacion_Add
-    '        frm.vlAccion = "U"
-    '        frm.vlCodHilado = GridEX1.GetValue(GridEX1.RootTable.Columns(0).Index)
-    '        frm.vlHilo = GridEX1.GetValue(GridEX1.RootTable.Columns(1).Index)
-    '        frm.vlfecha = IIf(GridEX1.GetValue(GridEX1.RootTable.Columns("FECHA_VIGENCIA_ULTIMO").Index) Is DBNull.Value, Date.Now, GridEX1.GetValue(GridEX1.RootTable.Columns("FECHA_VIGENCIA_ULTIMO").Index))
-    '        frm.TxtPrecio.Text = IIf(GridEX1.GetValue(GridEX1.RootTable.Columns("PRECIO_ULTIMO").Index) Is DBNull.Value, "0.00", GridEX1.GetValue(GridEX1.RootTable.Columns("PRECIO_ULTIMO").Index))
-    '        frm.ShowDialog()
-    '    End If
-    'End Sub
+    Private Sub TxtDescripcion_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TxtDescripcion.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Dim frmx As New FrmBusqueda
+            If TipoBusqueda = "3" Then
+                vlVal1 = ""
+                vlVal2 = ""
+                frmx.Cadena = "exec hi_muestra_titulos_hilados ''"
+                frmx.CargaDatos()
+                frmx.ShowDialog()
+                TxtCodigo.Text = vlVal1
+                TxtDescripcion.Text = vlVal2
+            End If
+
+            If TipoBusqueda = "4" Then
+                vlVal1 = ""
+                vlVal2 = ""
+                frmx.Cadena = "select Cod_TipoHilado Codigo,Descripcion from Hi_TipoHilado"
+                frmx.CargaDatos()
+                frmx.ShowDialog()
+                TxtCodigo.Text = vlVal1
+                TxtDescripcion.Text = vlVal2
+            End If
+
+        End If
+    End Sub
+
 End Class

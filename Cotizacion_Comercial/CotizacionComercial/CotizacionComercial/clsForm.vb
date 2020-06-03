@@ -169,6 +169,8 @@
                 Return New FrmMenu
             Case "FRMPRECIOHILADOCOTIZACION"
                 Return New FrmPrecioHiladoCotizacion
+            Case "FRMPRECIOTELACOTIZACION"
+                Return New FrmPrecioTelaCotizacion
             Case Else
                 Return Nothing
         End Select

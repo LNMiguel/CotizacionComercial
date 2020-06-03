@@ -11,6 +11,8 @@
         If DT.Rows.Count > 0 Then
             GridEX1.DataSource = DT
             CheckLayoutGridEx(GridEX1)
+            GridEX1.RootTable.Columns(0).Width = 100
+            GridEX1.RootTable.Columns(1).Width = 200
         Else
             MessageBox.Show("No se encontro registros..!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub

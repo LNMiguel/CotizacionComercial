@@ -182,6 +182,7 @@
     <Compile Include="Conexion\SQLConexion.vb" />
     <Compile Include="Entidades\Busqueda.vb" />
     <Compile Include="Entidades\PrecioHiladoCotizacion.vb" />
+    <Compile Include="Entidades\PrecioTelaCotizacion.vb" />
     <Compile Include="FrmBusqueda.Designer.vb">
       <DependentUpon>FrmBusqueda.vb</DependentUpon>
     </Compile>
@@ -211,6 +212,24 @@
       <DependentUpon>FrmPrecioHiladoCotizacion_Detalle.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmPrecioHiladoCotizacion_Detalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioTelaCotizacion.Designer.vb">
+      <DependentUpon>FrmPrecioTelaCotizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioTelaCotizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioTelaCotizacion_Add.Designer.vb">
+      <DependentUpon>FrmPrecioTelaCotizacion_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioTelaCotizacion_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrecioTelaCotizacion_Detalle.Designer.vb">
+      <DependentUpon>FrmPrecioTelaCotizacion_Detalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrecioTelaCotizacion_Detalle.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModuloGlobal.vb" />
@@ -246,6 +265,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrecioHiladoCotizacion_Detalle.resx">
       <DependentUpon>FrmPrecioHiladoCotizacion_Detalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioTelaCotizacion.resx">
+      <DependentUpon>FrmPrecioTelaCotizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioTelaCotizacion_Add.resx">
+      <DependentUpon>FrmPrecioTelaCotizacion_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrecioTelaCotizacion_Detalle.resx">
+      <DependentUpon>FrmPrecioTelaCotizacion_Detalle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">

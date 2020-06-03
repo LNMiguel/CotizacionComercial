@@ -1,23 +1,23 @@
-﻿Public Class FrmPrecioHiladoCotizacion_Detalle
-    Dim HiladoCotizacion As New PrecioHiladoCotizacion(cCONNECT)
-    Public vlCodHilado As String
+﻿Public Class FrmPrecioTelaCotizacion_Detalle
+    Dim TelaCotizacion As New PrecioTelaCotizacion(cCONNECT)
+    Public vlCodTela As String
     Dim vlTipo As String
-    Private Sub FrmPrecioHiladoCotizacion_Detalle_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FrmPrecioTelaCotizacion_Detalle_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MuestraDetalle()
     End Sub
 
     Sub MuestraDetalle()
         Try
             Dim Parametros(0 To 8 - 1) As Object
-            Parametros(0) = "up_man_Hi_Hilados_Precios_Cotizacion"
+            Parametros(0) = "up_man_Tj_Telas_Precios_Cotizacion"
             Parametros(1) = "V"
-            Parametros(2) = vlCodHilado
+            Parametros(2) = vlCodTela
             Parametros(3) = 0
             Parametros(4) = DBNull.Value
             Parametros(5) = DBNull.Value
             Parametros(6) = vusu
             Parametros(7) = 0
-            Dim DT As DataTable = HiladoCotizacion.MuestraDetallePrecios(Parametros)
+            Dim DT As DataTable = TelaCotizacion.MuestraDetallePrecios(Parametros)
             If DT.Rows.Count > 0 Then
                 GridEX1.DataSource = DT
                 CheckLayoutGridEx(GridEX1)
@@ -70,15 +70,15 @@
     Sub EliminarPrecio()
         Try
             Dim Parametros(0 To 8 - 1) As Object
-            Parametros(0) = "up_man_Hi_Hilados_Precios_Cotizacion"
+            Parametros(0) = "up_man_Tj_Telas_Precios_Cotizacion"
             Parametros(1) = "D"
-            Parametros(2) = vlCodHilado
+            Parametros(2) = vlCodTela
             Parametros(3) = GridEX1.GetValue(GridEX1.RootTable.Columns("SECUENCIA").Index)
             Parametros(4) = DBNull.Value
             Parametros(5) = DtpFecha.Value
             Parametros(6) = vusu
             Parametros(7) = 0
-            Dim Rs As Boolean = HiladoCotizacion.RegistraPrecio_Hilado(Parametros)
+            Dim Rs As Boolean = TelaCotizacion.RegistraPrecio_Tela(Parametros)
             If Rs = True Then
                 MessageBox.Show("Precio Eliminado Correctamente..!!", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 MuestraDetalle()
@@ -122,15 +122,15 @@
             End If
 
             Dim Parametros(0 To 8 - 1) As Object
-            Parametros(0) = "up_man_Hi_Hilados_Precios_Cotizacion"
+            Parametros(0) = "up_man_Tj_Telas_Precios_Cotizacion"
             Parametros(1) = vlTipo
-            Parametros(2) = vlCodHilado
+            Parametros(2) = vlCodTela
             Parametros(3) = IIf(vlTipo = "I", 0, GridEX1.GetValue(GridEX1.RootTable.Columns("SECUENCIA").Index))
             Parametros(4) = DBNull.Value
             Parametros(5) = DtpFecha.Value
             Parametros(6) = vusu
             Parametros(7) = CDbl(TxtPrecio.Text)
-            Dim Rs As Boolean = HiladoCotizacion.RegistraPrecio_Hilado(Parametros)
+            Dim Rs As Boolean = TelaCotizacion.RegistraPrecio_Tela(Parametros)
             If Rs = True Then
                 MessageBox.Show(IIf(vlTipo = "I", "Precio Registrado Correctamente..!!", "Precio Actualizado Correctamente..!!"), "OK", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 MuestraDetalle()

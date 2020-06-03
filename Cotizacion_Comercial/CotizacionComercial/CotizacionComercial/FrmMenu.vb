@@ -29,4 +29,12 @@
             '.Dispose()
         End With
     End Sub
+
+    Private Sub UiButton1_Click(sender As Object, e As EventArgs) Handles UiButton1.Click
+        Dim xFrm As New FrmPrecioTelaCotizacion
+        With xFrm
+            .Show()
+            '.Dispose()
+        End With
+    End Sub
 End Class

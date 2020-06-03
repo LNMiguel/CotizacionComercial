@@ -1,5 +1,4 @@
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\bin\Debug\CotizacionComercial.exe.config
-D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.vbprojAssemblyReference.cache
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmMenu.resources
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmPrecioHiladoCotizacion.resources
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.Resources.resources
@@ -60,3 +59,7 @@ D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmBusqueda.resources
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmPrecioHiladoCotizacion_Add.resources
 D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmPrecioHiladoCotizacion_Detalle.resources
+D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.vbprojAssemblyReference.cache
+D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmPrecioTelaCotizacion.resources
+D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmPrecioTelaCotizacion_Add.resources
+D:\Fuentes\SIGE\NET\Cotizacion_Comercial\CotizacionComercial\CotizacionComercial\obj\Debug\CotizacionComercial.FrmPrecioTelaCotizacion_Detalle.resources
